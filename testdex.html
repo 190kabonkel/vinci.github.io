@@ -6,14 +6,13 @@
     <link rel="stylesheet" href="css/index-styles.css">
     <meta charset="UTF-8">
 </head>
+<span id="username"></span>
+
 
 <body>
     <span id="username"></span>
     <script>
-        const username = localStorage.getItem('username');
-        if (username) {
-            document.getElementById('username').textContent = username;
-        }
+        document.getElementById('username').textContent = localStorage.getItem('username');
     </script>
     <h1 class="title">
         THE VINCI SOFTWARE PAGE
@@ -24,10 +23,12 @@
     </h2>
 
 
-    <a href="signin3.html" class="signin-btn">
+    <a href="signin.html">
         <button>sign in</button>
     </a>
-    <button>exit to duckduckgo</button>
+
+    <a href="https://duckduckgo.com">
+        <button>exit to duckduckgo</button>
     </a>
 
     <hr>
@@ -60,7 +61,7 @@ Our vinci phone will release soon
             <button>vinciphone</button>
         </a>
 
-        <a href="signin3.html" class="signin-btn">
+        <a href="signin.html">
             <button>sign in</button>
         </a>
 
