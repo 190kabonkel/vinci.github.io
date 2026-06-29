@@ -9,17 +9,47 @@ body {
 }
 
 h1 {
-    /* 2. Apply the font */
     font-family: 'VT323', monospace;
-    
+
     color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 20px;
-    
+
     /* 3. Ensure crisp pixels (disable smoothing) */
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
-    
-    /* Optional: Set a size that looks good for pixel fonts */
-    font-size: 48px; 
-}   
+
+    font-size: 48px;
+}
+
+.container,
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+
+    .container,
+    .section {
+        flex-direction: column;
+        /* Stack items vertically */
+        width: 90%;
+        /* Add some breathing room on sides */
+        margin: 0 auto;
+        /* Center the content */
+    }
+
+    /* Make images full width */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Make navigation buttons stack or become a hamburger menu */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
