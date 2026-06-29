@@ -46,3 +46,11 @@ h2 {
     font-weight: bold;
     font-style: italic;
 }
+    .gta_css {
+        border: 2px solid rgb(15, 14, 14);
+        margin: 10;
+        padding: 10px;
+        background: rgb(239, 168, 248);
+        font-size: 15px;
+        color: rgb(255, 240, 109);
+    }
