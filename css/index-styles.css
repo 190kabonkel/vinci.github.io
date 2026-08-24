@@ -69,6 +69,18 @@ h2 {
         display: flex;
         width: fit-content;
     }
+    .reinmagined {
+        border: 2px solid rgb(255, 0, 0);
+        margin: 10px;
+        padding: 10px;
+        background: rgb(25, 0, 255);
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 10px auto;
+        display: flex;
+        width: fit-content;
+    }
 
 button {
     background-color: rgb(27, 20, 94);
